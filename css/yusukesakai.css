@@ -1,0 +1,61 @@
+@import url('http://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+
+/* =ALL
+-----------------------------------------------------------------------------*/
+.container {
+	width: 470px!important;
+}
+
+.centered {
+	text-align: center!important;
+}
+
+/* =Header
+-----------------------------------------------------------------------------*/
+#header {
+	margin: 5em 0 10em;
+	text-align: center;
+}
+
+#header img#logo {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 2.5em;
+}
+
+#header h1, #header p {
+	margin: 0;
+	font-size: 1.45em;
+	font-family: 'Gentium Book Basic', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#header p {
+	font-size: 1.00em;
+}
+
+/* =Main
+-----------------------------------------------------------------------------*/
+.pager {
+	margin: 2.5em 0;
+}
+
+/* =Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	border-top: 1px solid #ccc;
+	margin: 5em 0 8em;
+	padding: 1em 0;
+	text-align: right;
+}
+
+#footer #nav {
+	float: left;
+	text-align: left;
+
+}
+
+#footer div {
+	padding: 10px 0;
+}
