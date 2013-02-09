@@ -17,6 +17,10 @@ body {
 	font-style: italic;
 }
 
+body#post {
+	padding: 3em 0;
+}
+
 a:hover {
 	text-decoration: none!important;
 	transition: color 0.5s ease;
@@ -38,18 +42,18 @@ i {
 }
 
 [class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+	font-family: 'FontAwesome', sans-serif;
 }
-
-body#post { padding: 3em 0; }
-body#post article { margin-bottom: 3em; }
-body#post header#header, body#post a.notecount { display: none; }
 
 /* =Header
 -----------------------------------------------------------------------------*/
 #header {
-	margin: 15em 0 45em;
+	margin: 15em 0 42em;
 	text-align: center;
+}
+
+body#post header#header {
+	display: none;
 }
 
 #nav {
@@ -68,20 +72,24 @@ article {
 	margin-bottom: 30em;
 }
 
-.amazon {
+body#post article {
+	margin-bottom: 3em;
+}
+
+article p {
 	text-align: center;
 }
 
-.amazon img {
+article p img {
 	max-width: 150px;
 	max-height: 150px;
 	margin: 1em 0;
 	padding: 25px;
 	border: 2px solid #c0c0c0;
-    border-radius: 50px;  
-    -webkit-border-radius: 50px;  
-    -moz-border-radius: 50px;
-    behavior: url('//litoma.github.com/css/PIE.htc');
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	behavior: url('//litoma.github.com/css/PIE.htc');
 }
 
 .meta {
@@ -98,6 +106,10 @@ article {
 .meta a.source {
 	color: #333;
 	margin-bottom: 1em;
+}
+
+body#post a.notecount {
+	display: none;
 }
 
 .notes {
@@ -141,6 +153,7 @@ article {
 	position: fixed;
 	bottom: 0;
 	left: 50%;
+	z-index: 1;
 	background: #fff;
 	opacity: 0.75;
 }
@@ -159,20 +172,20 @@ article {
 /* =Mobile
 -----------------------------------------------------------------------------*/
 @media screen and (max-width: 499px) {
-/*	img {
-		max-width: 100%;
-		height: auto;
-	} */
+img {
+	max-width: 100%;
+	height: auto;
+}
 
-	.container {
-		width: 100%!important;
-	}
+.container {
+	width: 100%!important;
+}
 
-	#header {
-		margin: 10em 0 20em;
-	}
+#header {
+	margin: 10em 0 20em;
+}
 
-	article {
-		margin-bottom: 20em;
-	}
+article {
+	margin-bottom: 20em;
+}
 }
