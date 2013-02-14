@@ -88,7 +88,7 @@ article p {
 	webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;
-	behavior: url('http://litoma.github.com/js/PIE.htc');
+	behavior: url('http://litoma.github.com/js/border-radius.htc');
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -112,6 +112,7 @@ article p a:before {
 	font-weight: normal;
 	font-size: 15pt;
 	line-height: 40px;
+	text-align: center;
 	color: #fff;
 	background: #000;
 	display: block;
@@ -123,7 +124,7 @@ article p a:before {
 	webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
 	border-radius: 40px;
-	behavior: url('http://litoma.github.com/js/PIE.htc');
+	behavior: url('http://litoma.github.com/js/border-radius.htc');
 }
 
 article p a.twitter:before {
@@ -159,8 +160,8 @@ article p img {
 	margin-bottom: 1em;
 }
 
-body#post a.notecount {
-	display: none;
+a.notecount {
+	display: none!important;
 }
 
 .notes {
