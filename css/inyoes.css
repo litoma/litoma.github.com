@@ -1,6 +1,6 @@
 @import url('//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic');
 @import url('//weloveiconfonts.com/api/?family=fontawesome');
-
+@import url('//weloveiconfonts.com/api/?family=zocial');
 
 /* =ALL
 -----------------------------------------------------------------------------*/
@@ -21,11 +21,11 @@ body#post {
 	padding: 3em 0;
 }
 
-a:hover {
+a {
 	text-decoration: none!important;
-	transition: color 0.5s ease;
 	-webkit-transition: color 0.5s ease;
 	-moz-transition: color 0.5s ease;
+	transition: color 0.5s ease;
 }
 
 i {
@@ -82,23 +82,54 @@ article p {
 	position: relative;
 	overflow: hidden;
 	display: block;
-	width: 120px;
-	height: 120px;
-	border: 3px double #c0c0c0;
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
+	width: 100px;
+	height: 100px;
+	border: 3px solid #ddd;
+	webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-	behavior: url('//litoma.github.com/css/PIE.htc');
+	border-radius: 100px;
+	behavior: url('http://litoma.github.com/js/PIE.htc');
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+article p:before {
+	content: "a";
+	font-family: 'zocial';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15pt;
+	line-height: 40px;
+	color: #fff;
+	background: #000;
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	behavior: url('http://litoma.github.com/js/PIE.htc');
+}
+
+article p:hover {
+	webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
 article p img {
-	position: relative;
-	min-width: 120px;
-	min-height: 120px;
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	behavior: url('//litoma.github.com/css/PIE.htc');
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100px;
+	min-height: 100px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .meta {
@@ -177,25 +208,4 @@ body#post a.notecount {
 .pager a.active, .pager a.active:hover {
 	background: #fff!important;
 	cursor: pointer!important;
-}
-
-/* =Mobile
------------------------------------------------------------------------------*/
-@media screen and (max-width: 499px) {
-img {
-	max-width: 100%;
-	height: auto;
-}
-
-.container {
-	width: 100%!important;
-}
-
-#header {
-	margin: 10em 0 20em;
-}
-
-article {
-	margin-bottom: 20em;
-}
 }
