@@ -9,7 +9,7 @@ html {
 }
 
 body {
-/*	background: #fff url('//dev.yusukesakai.com/img/bg.gif') repeat-x 0 0; */
+/*	background: #fff url('/img/bg.gif') repeat-x 0 0; */
 	margin: 0;
 	color: #333;
 	font-family: 'Droid Serif', serif;
@@ -147,13 +147,14 @@ article p img {
 	text-align: center;
 }
 
-.meta a.source,
+.meta a.author,
 .meta a.notecount {
 	width: 100%;
 	display: block;
 }
 
-.meta a.source {
+.meta a.author,
+.meta a.author:hover {
 	color: #333;
 	margin-bottom: 1em;
 }
