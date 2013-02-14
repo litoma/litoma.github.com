@@ -94,7 +94,18 @@ article p {
 	transition: all 0.5s ease;
 }
 
-article p:before {
+article p:hover {
+	webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+article p a,
+article p a:hover {
+	color: transparent!important;
+}
+
+article p a:before {
 	content: "a";
 	font-family: 'zocial';
 	font-style: normal;
@@ -115,10 +126,8 @@ article p:before {
 	behavior: url('http://litoma.github.com/js/PIE.htc');
 }
 
-article p:hover {
-	webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+article p a.twitter:before {
+	content: "T"!important;
 }
 
 article p img {
@@ -127,6 +136,7 @@ article p img {
 	left: 0;
 	min-width: 100px;
 	min-height: 100px;
+	border: 0;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	transition: all 0.5s ease;
