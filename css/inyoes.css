@@ -129,6 +129,7 @@ article p a:before {
 
 article p a.twitter:before {
 	content: "T"!important;
+	background: #0088cc!important;
 }
 
 article p img {
