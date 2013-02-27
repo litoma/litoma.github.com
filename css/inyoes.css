@@ -111,10 +111,11 @@ article p img {
 	height: 75px;
 	border: 0;
 	display: block;
-	background: no-repeat 0 0;
-	text-indent:100%;
-	white-space:nowrap;
-	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 article p a[href^="http://www.amazon.co.jp/"] {
