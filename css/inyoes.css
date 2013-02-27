@@ -105,18 +105,20 @@ article p img {
 }
 
 .meta {
-	margin: 3em 100px 1.5em 0;
+	margin: 3em 0 1.5em;
+}
+
+.meta div {
 	text-align: right;
+	margin: .75em 100px .75em 0;
 }
 
 .meta a, .meta a:hover {
 	color: #333;
-	margin-bottom: 1em;
 }
 
 .notes {
 	clear: both;
-	width: 100%;
 	margin: 5em 0;
 	padding: 1em 0;
 	border-top: 1px dotted #c0c0c0;
