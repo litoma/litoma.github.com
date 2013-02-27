@@ -78,54 +78,40 @@ body#post article {
 
 article p {
 	margin: 3em auto 1.5em;
-	position: relative;
-	overflow: hidden;
+	float: right;
+}
+
+article p a {
 	display: block;
 	width: 75px;
 	height: 75px;
-	float: right;
 	border: 3px solid #ddd;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	background: #eee no-repeat 0 0;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto;
 	opacity: 0.75;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-/* kadomaru akirameta
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
-*/
-}
-
-article p:hover {
-	border: 3px solid #efefef;
-	opacity: 1.00;
-}
-
-article p a[href^="https://twitter.com/"],
-article p a[href^="http://www.amazon.co.jp/"],
-article p img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 75px;
-	height: 75px;
-	border: 0;
-	display: block;
-	background-repeat: no-repeat;
-	background-position: 0 0;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 }
 
-article p a[href^="http://www.amazon.co.jp/"] {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+article p a[href^="https://twitter.com/"] {
+	background: #0088cc url('//litoma.github.com/img/bg_twitter.png') no-repeat 0 0;
 }
 
-article p a[href^="https://twitter.com/"] {
-	background: #0088cc url('//dev.yusukesakai.com/img/bg_twitter.png');
+article p a:hover {
+	border-color: #efefef;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	opacity: 1.00;
 }
 
 .meta {
@@ -187,7 +173,7 @@ article p a[href^="https://twitter.com/"] {
 	left: 50%;
 	z-index: 1;
 	border-top: 1px solid #ccc;
-	background: #fff;
+	background: #efefef;
 	opacity: 0.75;
 }
 
