@@ -116,16 +116,20 @@ article p a:hover {
 
 .meta {
 	margin: 3em 0 1.5em;
+	height: 81px; /* 75px + 3px + 3px */
+}
+
+body#post .meta {
+	height: auto!important;
+}
+
+.meta a, .meta a:hover {
+	color: #333;
 }
 
 .meta div.author, .meta div.notecount {
 	text-align: right;
 	margin: 0 91px .5em 0;
-	padding: 0;
-}
-
-.meta a, .meta a:hover {
-	color: #333;
 }
 
 .notes {
