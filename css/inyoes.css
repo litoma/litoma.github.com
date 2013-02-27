@@ -83,8 +83,12 @@ article p {
 	display: block;
 	width: 75px;
 	height: 75px;
-	border: 3px solid #ddd;
 	float: right;
+	border: 3px solid #ddd;
+	opacity: 0.75;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 /* kadomaru akirameta
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -92,16 +96,35 @@ article p {
 */
 }
 
+article p:hover {
+	border: 3px solid #efefef;
+	opacity: 1.00;
+}
+
+article p a[href^="https://twitter.com/"],
+article p a[href^="http://www.amazon.co.jp/"],
 article p img {
 	position: absolute;
 	top: 0;
 	left: 0;
-	min-width: 75px;
-	min-height: 75px;
+	width: 75px;
+	height: 75px;
 	border: 0;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	display: block;
+	background: no-repeat 0 0;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+article p a[href^="http://www.amazon.co.jp/"] {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+article p a[href^="https://twitter.com/"] {
+	background: #0088cc url('//dev.yusukesakai.com/img/bg_twitter.png');
 }
 
 .meta {
@@ -110,7 +133,8 @@ article p img {
 
 .meta div {
 	text-align: right;
-	margin: .5em 100px .5em 0;
+	margin: 0 91px .5em 0;
+	padding: 0;
 }
 
 .meta a, .meta a:hover {
@@ -161,6 +185,7 @@ article p img {
 	bottom: 0;
 	left: 50%;
 	z-index: 1;
+	border-top: 1px solid #ccc;
 	background: #fff;
 	opacity: 0.75;
 }
@@ -174,4 +199,25 @@ article p img {
 .pager a.active, .pager a.active:hover {
 	background: #fff!important;
 	cursor: pointer!important;
+}
+
+/* =Mobile
+-----------------------------------------------------------------------------*/
+@media screen and (max-width: 499px) {
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	width: 100%!important;
+}
+
+#header {
+	margin: 10em 0 20em;
+}
+
+article {
+	margin-bottom: 20em;
+}
 }
