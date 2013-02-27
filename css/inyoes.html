@@ -1,75 +1,77 @@
-<html lang="ja">
+
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-	<meta charset="utf-8">
-	<title>{Title}{block:PostTitle} : {PostTitle}{/block:PostTitle}</title>
-	<meta name="description" content="{block:Description}{MetaDescription}{/block:Description}">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<meta name="format-detection" content="telephone=no">
-	<link href="{Favicon}" rel="icon apple-touch-icon" type="image/png">
-	<link href="{RSS}" rel="alternate" type="application/rss+xml" title="RSS">
-	<link href="//litoma.github.com/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
-	<link href="//dev.yusukesakai.com/css/inyoes.css" rel="stylesheet" type="text/css" media="screen">
-	<!--[if IE]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<![endif]-->
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-66628-4']);
-		_gaq.push(['_trackPageview']);
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
+  <meta charset="utf-8">
+  <title>{Title}{block:PostTitle} : {PostTitle}{/block:PostTitle}</title>
+  <meta name="description" content="{block:Description}{MetaDescription}{/block:Description}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link href="{Favicon}" rel="icon apple-touch-icon" type="image/png">
+  <link href="{RSS}" rel="alternate" type="application/rss+xml" title="RSS">
+  <link href="//litoma.github.com/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="//litoma.github.com/css/inyoes.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="//litoma.github.com/css/inyoes.amazon.css" rel="stylesheet" type="text/css" media="screen">
+  <!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-66628-4']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 
 <body{block:PermalinkPage} id="post"{/block:PermalinkPage}>
 <div class="container">
-	<header id="header">
-		<a href="/"><img src="//litoma.github.com/img/logo_inyoes.png" height="150" width="500" alt="{Title}" id="logo"></a>
-		<nav id="nav">
-			<a href="/archive"><i class="fontawesome-hdd"></i> Archive</a>
-			<a href="https://twitter.com/inyoes_ja"><i class="fontawesome-twitter"></i> Twitter</a>
-		</nav>
-	</header>
+  <header id="header">
+    <a href="/"><img src="//litoma.github.com/img/logo_inyoes.png" height="150" width="500" alt="{Title}" id="logo"></a>
+    <nav id="nav">
+      <a href="/archive"><i class="fontawesome-hdd"></i> Archive</a>
+      <a href="https://twitter.com/inyoes_ja"><i class="fontawesome-twitter"></i> Twitter</a>
+    </nav>
+  </header>
 
-	<div id="main" class="autopagerize_page_element">
-		{block:Posts}
-		<article>
-			{block:Photo}
-			<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"></a>
-			{Caption}
-			{/block:Photo}
-			<footer class="meta">
-				{block:HasTags}
-				<div>by {block:Tags}<a href="{TagURL}" class="author">{Tag}</a>{/block:Tags}</div>
-				{/block:HasTags}
-				{block:NoteCount}
-				<div><a href="{Permalink}" class="notecount">{NoteCount} notes</a></div>
-				{/block:NoteCount}
-				{block:PostNotes}{PostNotes}{/block:PostNotes}
-			</footer>
-		</article>
-		{/block:Posts}
-	</div>
+  <div id="main" class="autopagerize_page_element">
+    {block:Posts}
+    <article>
+      {block:Photo}
+      <a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"></a>
+      {Caption}
+      {/block:Photo}
+      <footer class="meta">
+        {block:HasTags}
+        <div class="author">by {block:Tags}<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>
+        {/block:HasTags}
+        {block:NoteCount}
+        <div class="notecount"><a href="{Permalink}">{NoteCount} notes</a></div>
+        {/block:NoteCount}
+        {block:PostNotes}{PostNotes}{/block:PostNotes}
+      </footer>
+    </article>
+    {/block:Posts}
+  </div>
 
-	<footer id="footer"{block:PermalinkPage} class="pager"{/block:PermalinkPage}>
-		{block:Pagination}
-		{block:PreviousPage}
-		<a href="{PreviousPage}">Prev</a>
-		{/block:PreviousPage}
-		{block:NextPage}
-		<a href="{NextPage}" rel="next">Next</a>
-		{/block:NextPage}
-		{/block:Pagination}
-		{block:PermalinkPagination}
-		<a{block:NextPost} href="{NextPost}" class="active"{/block:NextPost}><i class="fontawesome-chevron-left"></i></a>
-		<a href="/" class="active"><i class="fontawesome-home"></i></a>
-		<a{block:PreviousPost} href="{PreviousPost}" class="active"{/block:PreviousPost}><i class="fontawesome-chevron-right"></i></a>
-		{/block:PermalinkPagination}
-	</footer>
+  <footer id="footer"{block:PermalinkPage} class="pager"{/block:PermalinkPage}>
+    {block:Pagination}
+    {block:PreviousPage}
+    <a href="{PreviousPage}">Prev</a>
+    {/block:PreviousPage}
+    {block:NextPage}
+    <a href="{NextPage}" rel="next">Next</a>
+    {/block:NextPage}
+    {/block:Pagination}
+    {block:PermalinkPagination}
+    <a{block:NextPost} href="{NextPost}" class="active"{/block:NextPost}><i class="fontawesome-chevron-left"></i></a>
+    <a href="/" class="active"><i class="fontawesome-home"></i></a>
+    <a{block:PreviousPost} href="{PreviousPost}" class="active"{/block:PreviousPost}><i class="fontawesome-chevron-right"></i></a>
+    {/block:PermalinkPagination}
+  </footer>
 </div>
 </body>
 </html>

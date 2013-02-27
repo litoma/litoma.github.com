@@ -118,7 +118,7 @@ article p a:hover {
 	margin: 3em 0 1.5em;
 }
 
-.meta div {
+.meta div.author, .meta div.notecount {
 	text-align: right;
 	margin: 0 91px .5em 0;
 	padding: 0;
