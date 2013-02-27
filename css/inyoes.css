@@ -1,6 +1,5 @@
 @import url('//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic');
 @import url('//weloveiconfonts.com/api/?family=fontawesome');
-@import url('//weloveiconfonts.com/api/?family=zocial');
 
 /* =ALL
 -----------------------------------------------------------------------------*/
@@ -9,7 +8,7 @@ html {
 }
 
 body {
-/*	background: #fff url('/img/bg.gif') repeat-x 0 0; */
+/*	background: #fff url('//dev.yusukesakai.com/img/bg.gif') repeat-x 0 0; */
 	margin: 0;
 	color: #333;
 	font-family: 'Droid Serif', serif;
@@ -82,62 +81,23 @@ article p {
 	position: relative;
 	overflow: hidden;
 	display: block;
-	width: 100px;
-	height: 100px;
+	width: 75px;
+	height: 75px;
 	border: 3px solid #ddd;
-	webkit-border-radius: 100px;
+	float: right;
+/* kadomaru akirameta
+	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;
-	behavior: url('//litoma.github.com/js/border-radius.htc');
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-
-article p:hover {
-	webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-
-article p a,
-article p a:hover {
-	color: transparent!important;
-}
-
-article p a:before {
-	content: "a";
-	font-family: 'zocial';
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15pt;
-	line-height: 40px;
-	text-align: center;
-	color: #fff;
-	background: #000;
-	display: block;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	behavior: url('//litoma.github.com/js/border-radius.htc');
-}
-
-article p a.twitter:before {
-	content: "T"!important;
-	background: #0088cc!important;
+*/
 }
 
 article p img {
 	position: absolute;
 	top: 0;
 	left: 0;
-	min-width: 100px;
-	min-height: 100px;
+	min-width: 75px;
+	min-height: 75px;
 	border: 0;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -145,24 +105,13 @@ article p img {
 }
 
 .meta {
-	margin: 1.5em 0;
-	text-align: center;
+	margin: 3em 100px 1.5em 0;
+	text-align: right;
 }
 
-.meta a.author,
-.meta a.notecount {
-	width: 100%;
-	display: block;
-}
-
-.meta a.author,
-.meta a.author:hover {
+.meta a, .meta a:hover {
 	color: #333;
-	margin-bottom: 1em;
-}
-
-a.notecount {
-	display: none!important;
+	margin-bottom: .5em;
 }
 
 .notes {
