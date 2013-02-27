@@ -139,6 +139,10 @@ article p a:hover {
 	list-style-type: none;
 }
 
+.notes div {
+	margin-bottom: .5em;
+}
+
 .autopagerize_page_info{
 	margin: 1em 0 30em;
 	font-size: large;
