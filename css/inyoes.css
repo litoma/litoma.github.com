@@ -129,7 +129,7 @@ article p a:hover {
 	line-height: 27px
 }
 
-.nonotes a:before {
+.nonotes:before {
 	content: "no notes";
 }
 
