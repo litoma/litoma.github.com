@@ -204,6 +204,10 @@ article p a:hover {
 /* =Mobile
 -----------------------------------------------------------------------------*/
 @media screen and (max-width: 499px) {
+body {
+	background: none;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
