@@ -230,6 +230,10 @@ img {
 	width: 100%!important;
 }
 
+#topcontrol {
+	display: none!important;
+}
+
 #header {
 	margin: 10em 0 20em;
 }
