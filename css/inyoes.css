@@ -38,12 +38,17 @@ i {
 	width: 500px!important;
 }
 
-.centered {
-	text-align: center!important;
-}
-
 [class*="fontawesome-"]:before {
 	font-family: 'FontAwesome', sans-serif;
+}
+
+#topcontrol {
+	margin: auto 1.5em 1.5em auto;
+	font-size: 30pt;
+}
+
+body#post #topcontrol {
+	display: none!important;
 }
 
 /* =Header
