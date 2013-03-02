@@ -188,6 +188,7 @@ article p a:hover {
 
 #footer a {
 	margin: 0 1.5em;
+	display: inline-block;
 }
 
 .pager {
@@ -217,7 +218,6 @@ article p a:hover {
 
 #more {
 	cursor: pointer;
-	display: block;
 	height: 2em;
 	background: transparent no-repeat bottom center;
 }
