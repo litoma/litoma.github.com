@@ -223,7 +223,7 @@ article p a:hover {
 }
 
 .pager #more {
-	display: none;
+	display: none!important;
 }
 
 /* =Mobile
