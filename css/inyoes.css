@@ -222,6 +222,10 @@ article p a:hover {
 	background: transparent no-repeat bottom center;
 }
 
+.pager #more {
+	display: none;
+}
+
 /* =Mobile
 -----------------------------------------------------------------------------*/
 @media screen and (max-width: 499px) {
