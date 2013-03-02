@@ -11,7 +11,7 @@ html {
 body {
 	background: #fff url('//litoma.github.com/img/bg_body.jpg') no-repeat top right;
 	margin: 0;
-	border-top: 3px solid #000;
+	border-top: 3px solid #333;
 	color: #333;
 	font-family: 'Droid Serif', serif;
 	font-weight: bold;
@@ -213,6 +213,13 @@ article p a:hover {
 .pager a.active, .pager a.active:hover {
 	background: #fff!important;
 	cursor: pointer!important;
+}
+
+#more {
+	cursor: pointer;
+	display: block;
+	height: 2em;
+	background: transparent no-repeat bottom center;
 }
 
 /* =Mobile
