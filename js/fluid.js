@@ -5,6 +5,7 @@ $(document).ready(function() {
 	var loading_next_page = false;
 	var new_posts = "";
 	$("#more").show();
+	$("#more").hover(function(){$(this).removeAttr("href");});
 	$("#more").bind("click", function(){newPosts();});
 
 	function newPosts() {

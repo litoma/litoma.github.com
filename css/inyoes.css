@@ -44,7 +44,7 @@ i {
 }
 
 #topcontrol {
-	margin: auto 1.5em 1.5em auto;
+	margin: auto 1.5em 1em auto;
 	font-size: 30pt;
 	color: #999;
 	-webkit-transition: color 0.5s ease;
