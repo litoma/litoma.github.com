@@ -151,9 +151,14 @@ article p a:hover {
 	direction: rtl;
 }
 
-.notes {
+.sociallinks {
 	clear: both;
-	margin: 5em 0;
+	margin: 1em 0;
+	text-align: center;
+}
+
+.notes {
+	margin: 1em 0 5em;
 	padding: 1em 0;
 	border-top: 1px dotted #c0c0c0;
 	text-align: left;
