@@ -151,10 +151,23 @@ article p a:hover {
 	direction: rtl;
 }
 
-.sociallinks {
+.socialbuttons {
 	clear: both;
-	margin: 1em 0;
+	margin: 3em 0 1.5em;
 	text-align: center;
+}
+
+.fb-like {
+	margin: 0 5px;
+	vertical-align: top;
+}
+
+.twitter-share-button {
+	width: 95px!important;
+}
+
+.g-plusone {
+	width: 60px!important;
 }
 
 .notes {
