@@ -164,10 +164,12 @@ article p a:hover {
 
 .twitter-share-button {
 	width: 95px!important;
+	overflow: hidden;
 }
 
 .g-plusone {
-	width: 60px!important;
+	width: 55px!important;
+	overflow: hidden;
 }
 
 .adsense {
@@ -189,16 +191,26 @@ article p a:hover {
 	margin-bottom: .5em;
 }
 
-.autopagerize_page_info{
-	margin: 1em 0 30em;
-	font-size: large;
-	text-align: center;
-}
-
-.autopagerize_page_separator{
+hr {
 	border-bottom: 1px dotted #c0c0c0;
 	border-top: 0;
 	margin: 0;
+}
+
+.tumblrautopager {
+	margin: 1em 0 30em;
+	text-align: left;
+	position: relative;
+}
+
+.switch {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.switch:before {
+	content: "Auto Page: ";
 }
 
 /* =Footer
@@ -239,16 +251,6 @@ article p a:hover {
 	cursor: pointer!important;
 }
 
-#more {
-	cursor: pointer;
-	height: 2em;
-	background: transparent no-repeat bottom center;
-}
-
-.pager #more {
-	display: none!important;
-}
-
 /* =Mobile
 -----------------------------------------------------------------------------*/
 @media screen and (max-width: 499px) {
@@ -275,5 +277,9 @@ img {
 
 article {
 	margin-bottom: 20em;
+}
+
+.adsense {
+	display: none!important;
 }
 }
